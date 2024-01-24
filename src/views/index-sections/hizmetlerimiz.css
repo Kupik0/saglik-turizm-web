@@ -1,0 +1,12 @@
+/* hizmetlerimiz.css */
+
+.animated-card {
+    border-radius: 12px; /* Köşeleri yuvarlat */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .animated-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Hover sırasında daha belirgin gölge */
+  }
+  
