@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import {
   Button,
@@ -26,20 +27,20 @@ function IndexNavbar() {
     setSelectedLanguage(language);
     localStorage.setItem("selectedLanguage", language);
     window.location.reload();
-    // You can perform additional actions on language change if needed
+    // Dil değişikliği durumunda gerekirse ek işlemler yapabilirsiniz
   };
 
   const sections = [
-    { id: "hizmetlerimiz-section", icon: "location_world", eng: "Services", tr: "Hizmetlerimiz", ar: "الخدمات", rus: "Услуги" },
-    { id: "anlasmalikurumlar-section", icon: "health_ambulance", eng: "Affiliated Institutions", tr: "Anlaşmalı Kurumlar", ar: "المؤسسات المتعاقدة", rus: "Подразделения" },
-    { id: "hakkimizda-section", icon: "travel_info", eng: "About Us", tr: "Hakkımızda", ar: "معلومات عنا", rus: "О нас" },
-    { id: "iletisim-section", icon: "ui-1_send", eng: "Contact", tr: "İletişim", ar: "اتصل", rus: "Контакт" },
+    { id: "hizmetlerimiz-section", icon: "location_world", eng: "Services", tr: "Hizmetlerimiz", ar: "الخدمات", rus: "Услуги", deu: "Dienstleistungen", esp: "Servicios" },
+    { id: "anlasmalikurumlar-section", icon: "health_ambulance", eng: "Affiliated Institutions", tr: "Anlaşmalı Kurumlar", ar: "المؤسسات المتعاقدة", rus: "Подразделения", deu: "Angeschlossene Einrichtungen", esp: "Instituciones Afiliadas" },
+    { id: "hakkimizda-section", icon: "travel_info", eng: "About Us", tr: "Hakkımızda", ar: "معلومات عنا", rus: "О нас", deu: "Über uns", esp: "Sobre nosotros" },
+    { id: "iletisim-section", icon: "ui-1_send", eng: "Contact", tr: "İletişim", ar: "اتصل", rus: "Контакт", deu: "Kontakt", esp: "Contacto" },
   ];
 
   const socialMediaLinks = [
-    { id: "twitter-tooltip", icon: "fab fa-twitter", text: "Twitter", link: "https://twitter.com/CreativeTim?ref=creativetim" },
-    { id: "facebook-tooltip", icon: "fab fa-facebook-square", text: "Facebook", link: "https://www.facebook.com/CreativeTim?ref=creativetim" },
-    { id: "instagram-tooltip", icon: "fab fa-instagram", text: "Instagram", link: "https://www.instagram.com/CreativeTimOfficial?ref=creativetim" },
+    { id: "twitter-tooltip", icon: "fab fa-twitter", text: "Twitter", },
+    { id: "facebook-tooltip", icon: "fab fa-facebook-square", text: "Facebook", },
+    { id: "instagram-tooltip", icon: "fab fa-instagram", text: "Instagram",  },
   ];
 
   React.useEffect(() => {
@@ -69,10 +70,10 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand target="_blank" id="navbar-brand">
-              {selectedLanguage === "rus" ? "Фокус заботы" : selectedLanguage === "ar" ? "تركيز الرعاية" : "Focus of Care"}
+              {selectedLanguage === "rus" ? "Anatolian Health Tours" : selectedLanguage === "ar" ? "Anatolian Health Tours" : selectedLanguage === "deu" ? "Anatolian Health Tours": selectedLanguage === "esp" ? "Anatolian Health Tours" : "Anatolian Health Tours"}
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              {selectedLanguage === "rus" ? "Здоровье, туризм" : selectedLanguage === "ar" ? "الصحة، السياحة" : "Sağlık, Turizm"}
+              {selectedLanguage === "rus" ? "Здоровье, туризм" : selectedLanguage === "ar" ? "الصحة، السياحة" : selectedLanguage === "deu" ? "Gesundheit, Tourismus" : selectedLanguage === "esp" ? "Salud, Turismo" : "Sağlık, Turizm"}
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -104,7 +105,7 @@ function IndexNavbar() {
                   </NavLink>
                 </NavItem>
               ))}
-              {/* Social Media Links */}
+              {/* Sosyal Medya Bağlantıları */}
               {socialMediaLinks.map((socialMedia) => (
                 <NavItem key={socialMedia.id}>
                   <NavLink
@@ -116,11 +117,11 @@ function IndexNavbar() {
                     <p className="d-lg-none d-xl-none">{socialMedia.text}</p>
                   </NavLink>
                   <UncontrolledTooltip target={`#${socialMedia.id}`}>
-                    {`Follow us on ${socialMedia.text}`}
+                    {`Bizi takip et: ${socialMedia.text}`}
                   </UncontrolledTooltip>
                 </NavItem>
               ))}
-              {/* Language Dropdown */}
+              {/* Dil Dropdown */}
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret className="d-flex align-items-center">
                   {selectedLanguage.toUpperCase()}
@@ -138,7 +139,13 @@ function IndexNavbar() {
                   <DropdownItem onClick={() => handleLanguageChange("rus")}>
                     Русский
                   </DropdownItem>
-                  {/* Add more language options as needed */}
+                  <DropdownItem onClick={() => handleLanguageChange("deu")}>
+                    Deutsch
+                  </DropdownItem>
+                  <DropdownItem onClick={() => handleLanguageChange("esp")}>
+                    Español
+                  </DropdownItem>
+                  {/* Gerekirse daha fazla dil seçeneği ekleyin */}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

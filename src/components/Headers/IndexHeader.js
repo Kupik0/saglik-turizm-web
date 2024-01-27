@@ -35,8 +35,8 @@ function IndexHeader() {
             <img
               alt="..."
               className="n-logo"
-              style={{ maxWidth: "100%" }}
-              src={require("assets/img/whitelogo.png")}
+              style={{ maxWidth: "50%" }}
+              src={require("assets/img/anatolianlogowhite.png")}
             ></img>
             <h4 style={{ marginTop: "20px" }}>
               {selectedLanguage === "eng" 
@@ -44,8 +44,11 @@ function IndexHeader() {
                 : selectedLanguage === "ar" 
                   ? "من منزلك، إلى صحتك..."
                   : selectedLanguage === "tr"
-                    ? "Evden sağlığınıza..."
-                    : "Из вашего дома, для вашего здоровья..."}
+                    ? "Evinizden,sağlığınıza..."
+                    : selectedLanguage === "deu"
+                      ? "Von Ihrem Zuhause zu Ihrer Gesundheit..."
+                      : selectedLanguage === "rus" ? "От вашего дома к вашему здоровью..."
+                      : "Desde tu hogar, hacia tu salud..."}
             </h4>
           </div>
         </Container>

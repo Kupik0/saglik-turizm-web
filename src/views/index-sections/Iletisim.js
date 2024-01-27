@@ -6,6 +6,8 @@ function Iletisim() {
 
   const isArabic = selectedLanguage === "ar";
   const isRussian = selectedLanguage === "rus";
+  const isGerman = selectedLanguage === "deu";
+  const isSpanish = selectedLanguage === "esp";
 
   const contactInfo = {
     eng: {
@@ -48,6 +50,26 @@ function Iletisim() {
       likeFacebook: "Нравится нам на Facebook!",
       followLinkedin: "Подписывайтесь на нас в Linkedin!",
     },
+    deu: {
+      title: "Kontakt",
+      address: "Kırkkonaklar mah. 3334. sk 3116.cd 11/11 Çankaya/ANKARA Kat 11. Eilhaus.",
+      phone: "+90 123 456 789",
+      fax: "+90 123 456 789",
+      email: "info@example.com",
+      followTwitter: "Folge uns auf Twitter!",
+      likeFacebook: "Gefällt mir auf Facebook!",
+      followLinkedin: "Folge uns auf Linkedin!",
+    },
+    esp: {
+      title: "Contacto",
+      address: "Kırkkonaklar mah. 3334. sk 3116.cd 11/11 Çankaya/ANKARA Planta 11. Edificio Urgente.",
+      phone: "+90 123 456 789",
+      fax: "+90 123 456 789",
+      email: "info@example.com",
+      followTwitter: "Síguenos en Twitter!",
+      likeFacebook: "Me gusta en Facebook!",
+      followLinkedin: "Síguenos en Linkedin!",
+    },
   };
 
   return (
@@ -60,10 +82,10 @@ function Iletisim() {
         <Container>
           <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
-              <h3 className="title">{isRussian ? contactInfo.rus.title : (isArabic ? contactInfo.ar.title : contactInfo[selectedLanguage].title)}</h3>
+              <h3 className="title">{isSpanish ? contactInfo.esp.title : (isGerman ? contactInfo.deu.title : (isRussian ? contactInfo.rus.title : (isArabic ? contactInfo.ar.title : contactInfo[selectedLanguage].title)))}</h3>
               <p className="contact-info">
-                <strong>{isRussian ? "Адрес" : (isArabic ? "عنوان" : "Adres")}</strong>: {isRussian ? contactInfo.rus.address : (isArabic ? contactInfo.ar.address : contactInfo[selectedLanguage].address)} <br />
-                <strong>{isRussian ? "Телефон" : (isArabic ? "هاتف" : "Telefon")}</strong>: {contactInfo[selectedLanguage].phone} <br />
+                <strong>{isSpanish ? "Dirección" : (isGerman ? "Adresse" : (isArabic ? "عنوان" : "Adres"))}</strong>: {isSpanish ? contactInfo.esp.address : (isGerman ? contactInfo.deu.address : (isArabic ? contactInfo.ar.address : contactInfo[selectedLanguage].address))} <br />
+                <strong>{isSpanish ? "Teléfono" : (isGerman ? "Telefon" : (isArabic ? "هاتف" : "Telefon"))}</strong>: {contactInfo[selectedLanguage].phone} <br />
                 <strong>Fax:</strong> {contactInfo[selectedLanguage].fax} <br />
                 <strong>Email:</strong> {contactInfo[selectedLanguage].email}
               </p>
@@ -85,7 +107,7 @@ function Iletisim() {
                 <i className="fab fa-twitter"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip86114138">
-                {isRussian ? contactInfo.rus.followTwitter : (isArabic ? contactInfo.ar.followTwitter : contactInfo[selectedLanguage].followTwitter)}
+                {isSpanish ? contactInfo.esp.followTwitter : (isGerman ? contactInfo.deu.followTwitter : (isRussian ? contactInfo.rus.followTwitter : (isArabic ? contactInfo.ar.followTwitter : contactInfo[selectedLanguage].followTwitter)))}
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"
@@ -97,7 +119,7 @@ function Iletisim() {
                 <i className="fab fa-facebook-square"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip735272548">
-                {isRussian ? contactInfo.rus.likeFacebook : (isArabic ? contactInfo.ar.likeFacebook : contactInfo[selectedLanguage].likeFacebook)}
+                {isSpanish ? contactInfo.esp.likeFacebook : (isGerman ? contactInfo.deu.likeFacebook : (isRussian ? contactInfo.rus.likeFacebook : (isArabic ? contactInfo.ar.likeFacebook : contactInfo[selectedLanguage].likeFacebook)))}
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"
@@ -109,7 +131,7 @@ function Iletisim() {
                 <i className="fab fa-linkedin"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip647117716">
-                {isRussian ? contactInfo.rus.followLinkedin : (isArabic ? contactInfo.ar.followLinkedin : contactInfo[selectedLanguage].followLinkedin)}
+                {isSpanish ? contactInfo.esp.followLinkedin : (isGerman ? contactInfo.deu.followLinkedin : (isRussian ? contactInfo.rus.followLinkedin : (isArabic ? contactInfo.ar.followLinkedin : contactInfo[selectedLanguage].followLinkedin)))}
               </UncontrolledTooltip>
             </Col>
           </Row>

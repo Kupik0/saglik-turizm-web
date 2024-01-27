@@ -7,8 +7,10 @@ function Hizmetlerimiz() {
 
   const isArabic = selectedLanguage === "ar";
   const isRussian = selectedLanguage === "rus";
-
+  const isGerman = selectedLanguage === "deu";
+  const isSpanish = selectedLanguage === "esp";
   const content = {
+
     eng: {
       title: "Our Services",
       description: "As a Health Agency, your health is our priority. We are here to respond to your needs in the most effective and attentive way. Working with our expert team, we strive to protect your health and provide the highest quality service. We work together to offer you tailored solutions to enhance your health and quality of life.",
@@ -75,6 +77,50 @@ function Hizmetlerimiz() {
         }
       ]
     },
+    deu: {
+      title: "Unsere Dienstleistungen",
+      description: "Als Gesundheitsagentur ist Ihre Gesundheit unsere Priorität. Wir sind hier, um auf Ihre Bedürfnisse auf effektivste und aufmerksamste Weise zu reagieren. Mit unserem Expertenteam streben wir danach, Ihre Gesundheit zu schützen und den bestmöglichen Service zu bieten. Wir arbeiten gemeinsam daran, Ihnen maßgeschneiderte Lösungen zur Verbesserung Ihrer Gesundheit und Lebensqualität anzubieten.",
+      cards: [
+        {
+          title: "Kostenloser Transfer",
+          description: "Wir empfangen Sie am Flughafen und transportieren Sie sicher zu Ihrer Unterkunft mit kostenlosem Transfer."
+        },
+        {
+          title: "Hotelreservierung",
+          description: "Um die Schönheiten des Mittelmeers zu erkunden, gestalten wir für Sie ein besonderes Unterkunfts- und Urlaubserlebnis in Antalya."
+        },
+        {
+          title: "Persönlicher Dolmetscher",
+          description: "Mit unserem Expertenteam für Übersetzung bieten wir Ihnen die effektivsten Kommunikationslösungen."
+        },
+        {
+          title: "Angeschlossene Gesundheitseinrichtungen",
+          description: "Ihre Gesundheit und die Gesundheit Ihrer Lieben liegen uns am Herzen. Daher verpflichten wir uns, durch die Zusammenarbeit mit angeschlossenen Gesundheitseinrichtungen einen besseren Service zu bieten."
+        }
+      ]
+    },
+    esp: {
+      title: "Nuestros Servicios",
+      description: "Como Agencia de Salud, su salud es nuestra prioridad. Estamos aquí para responder a sus necesidades de la manera más efectiva y atenta. Trabajando con nuestro equipo de expertos, nos esforzamos por proteger su salud y brindar el servicio de la más alta calidad. Trabajamos juntos para ofrecerle soluciones personalizadas para mejorar su salud y calidad de vida.",
+      cards: [
+        {
+          title: "Traslado Gratuito",
+          description: "Lo recibimos en el aeropuerto y lo transportamos de manera segura a su alojamiento con un traslado gratuito."
+        },
+        {
+          title: "Reserva de Hotel",
+          description: "Para explorar las bellezas del Mediterráneo, diseñamos una experiencia de alojamiento y vacaciones especial para usted en Antalya."
+        },
+        {
+          title: "Intérprete Personal",
+          description: "Con nuestro equipo de intérpretes expertos, proporcionamos las soluciones de comunicación más efectivas para usted."
+        },
+        {
+          title: "Instituciones de Salud Afiliadas",
+          description: "Su salud y la de sus seres queridos son importantes para nosotros. Por lo tanto, nos comprometemos a brindar un mejor servicio trabajando con instituciones de salud afiliadas."
+        }
+      ]
+    },
     rus: {
       title: "Наши услуги",
       description: "Как агентство по здравоохранению, ваше здоровье - наш приоритет. Мы здесь, чтобы отвечать на ваши потребности наиболее эффективным и внимательным образом. Совместно с нашей экспертной командой мы стремимся защищать ваше здоровье и предоставлять высококачественное обслуживание. Мы работаем вместе, чтобы предложить вам индивидуальные решения для улучшения вашего здоровья и качества жизни.",
@@ -97,6 +143,7 @@ function Hizmetlerimiz() {
         }
       ]
     }
+    
   };
 
   return (
@@ -109,14 +156,42 @@ function Hizmetlerimiz() {
         <Container>
           <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
-              <h3 className="title">{isRussian ? content.rus.title : (isArabic ? content.ar.title : content[selectedLanguage].title)}</h3>
+              <h3 className="title">
+                {isRussian
+                  ? content.rus.title
+                  : isArabic
+                  ? content.ar.title
+                  : isGerman
+                  ? content.deu.title
+                  : isSpanish
+                  ? content.esp.title
+                  : content[selectedLanguage].title}
+              </h3>
               <h5 className="description">
-                {isRussian ? content.rus.description : (isArabic ? content.ar.description : content[selectedLanguage].description)}
+                {isRussian
+                  ? content.rus.description
+                  : isArabic
+                  ? content.ar.description
+                  : isGerman
+                  ? content.deu.description
+                  : isSpanish
+                  ? content.esp.description
+                  : content[selectedLanguage].description}
               </h5>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            {content[isRussian ? "rus" : (isArabic ? "ar" : selectedLanguage)].cards.map((card, index) => (
+            {content[
+              isRussian
+                ? "rus"
+                : isArabic
+                ? "ar"
+                : isGerman
+                ? "deu"
+                : isSpanish
+                ? "esp"
+                : selectedLanguage
+            ].cards.map((card, index) => (
               <Col key={index} lg="3" md="6" className="animated-card">
                 <div className="info">
                   <div className="description">
@@ -131,6 +206,7 @@ function Hizmetlerimiz() {
       </div>
     </>
   );
+  
 }
 
 export default Hizmetlerimiz;
