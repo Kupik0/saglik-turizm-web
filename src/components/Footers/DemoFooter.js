@@ -34,7 +34,7 @@ function DemoFooter() {
                   href="https://www.creative-tim.com?ref=pkr-footer"
                   target="_blank"
                 >
-                  Creative Tim
+                  null. tech
                 </a>
               </li>
               <li>

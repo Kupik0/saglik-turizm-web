@@ -18,7 +18,7 @@ function DefaultFooter() {
                   href="https://www.creative-tim.com?ref=nukr-default-footer"
                   target="_blank"
                 >
-                  Creative Tim
+                  MyPlanet
                 </a>
               </li>
               <li>
@@ -26,7 +26,7 @@ function DefaultFooter() {
                   href="http://presentation.creative-tim.com?ref=nukr-default-footer"
                   target="_blank"
                 >
-                  About Us
+                  Daha fazla öğren
                 </a>
               </li>
               <li>
@@ -52,7 +52,7 @@ function DefaultFooter() {
               href="https://www.creative-tim.com?ref=nukr-default-footer"
               target="_blank"
             >
-              Creative Tim
+             null. tech
             </a>
             .
           </div>

@@ -46,28 +46,7 @@ function Hakkimizda() {
                 {content[selectedLanguage].description}
               </h5>
             </Col>
-            <Col className="text-center" lg="8" md="12">
-              <Button
-                className="btn-round mr-1"
-                color="info"
-                //href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
-                role="button"
-                size="lg"
-              >
-                Buton 1
-              </Button>
-              <Button
-                className="btn-round"
-                color="primary"
-                //href="https://www.invisionapp.com/now?ref=creativetim"
-                outline
-                role="button"
-                size="lg"
-                target="_blank"
-              >
-                Buton 2
-              </Button>
-            </Col>
+           
           </Row>
         </Container>
       </div>

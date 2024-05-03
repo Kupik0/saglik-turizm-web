@@ -1,0 +1,39 @@
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-raised {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+ 
+
+}
+
+.img-raised:hover {
+  transform: scale(1.1);
+  filter: brightness(40%); /* Ayarlanabilir: 0 ile 100 arasında bir değer */
+  
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.hospital-name {
+  font-size: 16px; /* İhtiyaca göre yazı boyutunu ayarlayabilirsin */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+}

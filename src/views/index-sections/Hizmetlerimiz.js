@@ -16,12 +16,12 @@ function Hizmetlerimiz() {
       description: "As a Health Agency, your health is our priority. We are here to respond to your needs in the most effective and attentive way. Working with our expert team, we strive to protect your health and provide the highest quality service. We work together to offer you tailored solutions to enhance your health and quality of life.",
       cards: [
         {
-          title: "Free Transfer",
-          description: "We meet you at the airport and safely transport you to your accommodation with a free transfer."
+          title: "Secure transfer",
+          description: "We transport you to assist with your procedures from your arrival to our country for your treatment, reaching the treatment, and until your return home."
         },
         {
           title: "Hotel Reservation",
-          description: "To explore the beauties of the Mediterranean, we design a special accommodation and holiday experience for you in Antalya."
+          description: "We invite you to stay in the most beautiful hotels of our country in the most suitable way and discover the beauties of Turkey."
         },
         {
           title: "Personal Interpreter",
@@ -38,12 +38,12 @@ function Hizmetlerimiz() {
       description: "Sağlık Acentesi olarak, sizin sağlığınız bizim önceliğimizdir. İhtiyaçlarınıza en etkili ve özenli şekilde yanıt vermek için buradayız. Sağlığınızı korumak ve en kaliteli hizmeti sunmak adına uzman ekibimizle birlikte çalışıyoruz. Size özel çözümler sunarak, sağlık ve yaşam kalitenizi artırmak için elbirliğiyle çaba gösteriyoruz.",
       cards: [
         {
-          title: "Ücretsiz Transfer",
-          description: "Sizi havaalanında karşılayarak, konaklayacağınız yere ücretsiz bir transferle sizi güvenli bir şekilde taşıyoruz."
+          title: "Güvenli transfer",
+          description: "Tedaviniz için ülkemize gelişinizden tedaviye ulaşmanız ardından eve dönüşünüze kadar sizinle beraber işlemlerinize yardımcı olmak üzere sizleri taşıyoruz."
         },
         {
-          title: "Otel Rezervasyonu",
-          description: "Akdeniz’in güzelliklerini keşfetmek için Antalya’da, size özel bir konaklama ve tatil deneyimi tasarlıyoruz."
+          title: "Otel Rezervasyonu / Konaklama",
+          description: "Sizleri Ülkemizin en güzel otellerinde en uygun şekilde konaklamaya ve Türkiye’nin güzellikleini keşfetmeye davet ediyoruz."
         },
         {
           title: "Özel Tercüman",
@@ -60,12 +60,12 @@ function Hizmetlerimiz() {
       description: "كوكالة صحية، صحتك هي أولويتنا. نحن هنا للرد على احتياجاتك بأكثر طريقة فعالة ومراعية. نعمل مع فريقنا المتخصص لحماية صحتك وتقديم أعلى جودة خدمة. نعمل معًا لنقدم لك حلاً مخصصًا لتعزيز صحتك وجودة حياتك.",
       cards: [
         {
-          title: "نقل مجاني",
-          description: "نلتقي بك في المطار ونقوم بنقلك بأمان إلى مكان إقامتك مع نقل مجاني."
+          title: "نقل آمن",
+          description:  "نقلك لمساعدتك في إجراءاتك من وصولك إلى بلدنا لتلقي العلاج وحتى عودتك إلى المنزل."
         },
         {
           title: "حجز الفندق",
-          description: "لاستكشاف جمال البحر الأبيض المتوسط، نقوم بتصميم تجربة إقامة وعطلة خاصة لك في أنطاليا."
+          description: "ندعوكم للإقامة في أجمل فنادق بلدنا بأفضل الطرق واكتشاف جمالات تركيا."
         },
         {
           title: "مترجم شخصي",
@@ -82,12 +82,12 @@ function Hizmetlerimiz() {
       description: "Als Gesundheitsagentur ist Ihre Gesundheit unsere Priorität. Wir sind hier, um auf Ihre Bedürfnisse auf effektivste und aufmerksamste Weise zu reagieren. Mit unserem Expertenteam streben wir danach, Ihre Gesundheit zu schützen und den bestmöglichen Service zu bieten. Wir arbeiten gemeinsam daran, Ihnen maßgeschneiderte Lösungen zur Verbesserung Ihrer Gesundheit und Lebensqualität anzubieten.",
       cards: [
         {
-          title: "Kostenloser Transfer",
-          description: "Wir empfangen Sie am Flughafen und transportieren Sie sicher zu Ihrer Unterkunft mit kostenlosem Transfer."
+          title: "Sicherer Transfer",
+          description: "Wir transportieren Sie, um Ihnen bei Ihren Verfahren von Ihrer Ankunft in unserem Land für Ihre Behandlung bis zur Rückkehr nach Hause zu helfen."
         },
         {
           title: "Hotelreservierung",
-          description: "Um die Schönheiten des Mittelmeers zu erkunden, gestalten wir für Sie ein besonderes Unterkunfts- und Urlaubserlebnis in Antalya."
+          description:  "Wir laden Sie ein, in den schönsten Hotels unseres Landes auf die günstigste Weise zu übernachten und die Schönheiten der Türkei zu entdecken."
         },
         {
           title: "Persönlicher Dolmetscher",
@@ -104,12 +104,12 @@ function Hizmetlerimiz() {
       description: "Como Agencia de Salud, su salud es nuestra prioridad. Estamos aquí para responder a sus necesidades de la manera más efectiva y atenta. Trabajando con nuestro equipo de expertos, nos esforzamos por proteger su salud y brindar el servicio de la más alta calidad. Trabajamos juntos para ofrecerle soluciones personalizadas para mejorar su salud y calidad de vida.",
       cards: [
         {
-          title: "Traslado Gratuito",
-          description: "Lo recibimos en el aeropuerto y lo transportamos de manera segura a su alojamiento con un traslado gratuito."
+          title: "Transferencia Segura",
+          description:"Te transportamos para ayudarte con tus procedimientos desde tu llegada a nuestro país para tu tratamiento, llegando al tratamiento y hasta tu regreso a casa."
         },
         {
           title: "Reserva de Hotel",
-          description: "Para explorar las bellezas del Mediterráneo, diseñamos una experiencia de alojamiento y vacaciones especial para usted en Antalya."
+          description: "Los invitamos a alojarse en los hoteles más hermosos de nuestro país de la manera más conveniente y a descubrir las bellezas de Turquía."
         },
         {
           title: "Intérprete Personal",
@@ -126,12 +126,12 @@ function Hizmetlerimiz() {
       description: "Как агентство по здравоохранению, ваше здоровье - наш приоритет. Мы здесь, чтобы отвечать на ваши потребности наиболее эффективным и внимательным образом. Совместно с нашей экспертной командой мы стремимся защищать ваше здоровье и предоставлять высококачественное обслуживание. Мы работаем вместе, чтобы предложить вам индивидуальные решения для улучшения вашего здоровья и качества жизни.",
       cards: [
         {
-          title: "Бесплатный трансфер",
-          description: "Мы встречаем вас в аэропорту и безопасно доставляем вас в ваше жилье с бесплатным трансфером."
+          title: "Безопасный трансфер",
+          description: "Мы перевозим вас, чтобы помочь вам с вашими процедурами с момента прибытия в нашу страну для лечения, достижения лечения и до вашего возвращения домой."
         },
         {
           title: "Бронирование отеля",
-          description: "Чтобы исследовать красоты Средиземного моря, мы разрабатываем для вас особый опыт проживания и отдыха в Анталии."
+          description: "Приглашаем вас остановиться в самых красивых отелях нашей страны наиболее удобным способом и открывать красоты Турции."
         },
         {
           title: "Личный переводчик",

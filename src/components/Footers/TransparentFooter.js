@@ -15,7 +15,7 @@ function TransparentFooter() {
                 href="https://www.creative-tim.com?ref=nukr-transparent-footer"
                 target="_blank"
               >
-                Creative Tim
+                null. tech
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ function TransparentFooter() {
             href="https://www.creative-tim.com?ref=nukr-transparent-footer"
             target="_blank"
           >
-            Creative Tim
+            null tech.
           </a>
           .
         </div>

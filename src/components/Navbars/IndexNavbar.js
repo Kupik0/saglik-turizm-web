@@ -19,6 +19,7 @@ import {
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
   const [selectedLanguage, setSelectedLanguage] = React.useState(
     localStorage.getItem("selectedLanguage") || "eng"
   );
@@ -69,9 +70,11 @@ function IndexNavbar() {
       <Navbar className={`fixed-top ${navbarColor}`} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
+            <h6>
             <NavbarBrand target="_blank" id="navbar-brand">
-              {selectedLanguage === "rus" ? "Anatolian Health Tours" : selectedLanguage === "ar" ? "Anatolian Health Tours" : selectedLanguage === "deu" ? "Anatolian Health Tours": selectedLanguage === "esp" ? "Anatolian Health Tours" : "Anatolian Health Tours"}
+              {selectedLanguage === "rus" ? "MyPlanet" : selectedLanguage === "ar" ? "MyPlanet" : selectedLanguage === "deu" ? "MyPlanet": selectedLanguage === "esp" ? "MyPlanet" : "MyPlanet"}
             </NavbarBrand>
+            </h6>
             <UncontrolledTooltip target="#navbar-brand">
               {selectedLanguage === "rus" ? "Здоровье, туризм" : selectedLanguage === "ar" ? "الصحة، السياحة" : selectedLanguage === "deu" ? "Gesundheit, Tourismus" : selectedLanguage === "esp" ? "Salud, Turismo" : "Sağlık, Turizm"}
             </UncontrolledTooltip>
@@ -90,8 +93,10 @@ function IndexNavbar() {
             </button>
           </div>
           <Collapse className="justify-content-end" isOpen={collapseOpen} navbar>
+            
             <Nav navbar>
               {sections.map((section) => (
+                <h5>
                 <NavItem key={section.id}>
                   <NavLink
                     href="#pablo"
@@ -102,8 +107,10 @@ function IndexNavbar() {
                   >
                     <i className={`now-ui-icons ${section.icon}`}></i>
                     <p>{section[selectedLanguage]}</p>
+
                   </NavLink>
                 </NavItem>
+                </h5>
               ))}
               {/* Sosyal Medya Bağlantıları */}
               {socialMediaLinks.map((socialMedia) => (
@@ -122,18 +129,22 @@ function IndexNavbar() {
                 </NavItem>
               ))}
               {/* Dil Dropdown */}
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret className="d-flex align-items-center">
+              
+              <UncontrolledDropdown onToggle={(isOpen) => setMenuOpen(isOpen)} nav inNavbar>
+                <DropdownToggle  nav caret className="d-flex align-items-center">
                   {selectedLanguage.toUpperCase()}
+               
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu>
+                <div style={{ overflowX: 'auto' }}>
                   <DropdownItem onClick={() => handleLanguageChange("eng")}>
                     English
                   </DropdownItem>
                   <DropdownItem onClick={() => handleLanguageChange("tr")}>
                     Türkçe
                   </DropdownItem>
-                  <DropdownItem onClick={() => handleLanguageChange("ar")}>
+  
+                  <DropdownItem  onClick={() => handleLanguageChange("ar")}>
                     العربية
                   </DropdownItem>
                   <DropdownItem onClick={() => handleLanguageChange("rus")}>
@@ -146,8 +157,14 @@ function IndexNavbar() {
                     Español
                   </DropdownItem>
                   {/* Gerekirse daha fazla dil seçeneği ekleyin */}
+                  </div>
                 </DropdownMenu>
+                
+        
+ 
               </UncontrolledDropdown>
+          
+           
             </Nav>
           </Collapse>
         </Container>

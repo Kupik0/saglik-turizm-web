@@ -44,7 +44,7 @@ function DarkFooter() {
             href="https://www.creative-tim.com?ref=nukr-dark-footer"
             target="_blank"
           >
-            null. technologies
+            null. tech
           </a>
           .
         </div>

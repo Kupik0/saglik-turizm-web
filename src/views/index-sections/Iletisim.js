@@ -12,60 +12,48 @@ function Iletisim() {
   const contactInfo = {
     eng: {
       title: "Contact",
-      address: "Kırkkonaklar mah. 3334. sk 3116.cd 11/11 Çankaya/ANKARA Kat 11. Acele apartmanı.",
-      phone: "+90 123 456 789",
-      fax: "+90 123 456 789",
-      email: "info@example.com",
+      address:  "Dinek, Zamanoğlu Street No: 29/2 Alanya/Antalya",
+      phone: "0242 511 77 21",
       followTwitter: "Follow us on Twitter!",
       likeFacebook: "Like us on Facebook!",
       followLinkedin: "Follow us on Linkedin!",
     },
     tr: {
       title: "İletişim",
-      address: "Kırkkonaklar mah. 3334. sk 3116.cd 11/11 Çankaya/ANKARA Kat 11. Acele apartmanı.",
-      phone: "+90 123 456 789",
-      fax: "+90 123 456 789",
-      email: "info@example.com",
+      address: "Dinek Mah. Zamanoğlu Cad no: 29/2 Alanya/Antalya",
+      phone: "0242 511 77 21",
       followTwitter: "Bizi Twitter'da Takip Edin!",
       likeFacebook: "Bizi Facebook'ta Beğenin!",
       followLinkedin: "Bizi Linkedin'da Takip Edin!",
     },
     ar: {
       title: "اتصل بنا",
-      address: "محافظة الخير، شارع السعادة، بناية السلام",
-      phone: "+90 123 456 789",
-      fax: "+90 123 456 789",
-      email: "info@example.com",
+      address:"Dinek حيّ , Zamanoğlu شارع no:29/2 Alanya/Antalya",
+      phone: "0242 511 77 21",
       followTwitter: "تابعنا على تويتر!",
       likeFacebook: "أعجب بنا على فيسبوك!",
       followLinkedin: "تابعنا على لينكد إن!",
     },
     rus: {
       title: "Контакты",
-      address: "Киркконаклар мах. 3334. ул. 3116. д. 11/11 Чанкая/АНКАРА Этаж 11. Срочный дом.",
-      phone: "+90 123 456 789",
-      fax: "+90 123 456 789",
-      email: "info@example.com",
+      address:"Dinek Mah. Zamanoğlu Cad no: 29/2 Alanya/Antalya",
+      phone: "0242 511 77 21",
       followTwitter: "Подписывайтесь на нас в Твиттере!",
       likeFacebook: "Нравится нам на Facebook!",
       followLinkedin: "Подписывайтесь на нас в Linkedin!",
     },
     deu: {
       title: "Kontakt",
-      address: "Kırkkonaklar mah. 3334. sk 3116.cd 11/11 Çankaya/ANKARA Kat 11. Eilhaus.",
-      phone: "+90 123 456 789",
-      fax: "+90 123 456 789",
-      email: "info@example.com",
+      address:"Dinek Mah. Zamanoğlu Cad no: 29/2 Alanya/Antalya",
+      phone: "0242 511 77 21",
       followTwitter: "Folge uns auf Twitter!",
       likeFacebook: "Gefällt mir auf Facebook!",
       followLinkedin: "Folge uns auf Linkedin!",
     },
     esp: {
       title: "Contacto",
-      address: "Kırkkonaklar mah. 3334. sk 3116.cd 11/11 Çankaya/ANKARA Planta 11. Edificio Urgente.",
-      phone: "+90 123 456 789",
-      fax: "+90 123 456 789",
-      email: "info@example.com",
+      address: "Dinek Mah. Zamanoğlu Cad no: 29/2 Alanya/Antalya",
+      phone: "0242 511 77 21",
       followTwitter: "Síguenos en Twitter!",
       likeFacebook: "Me gusta en Facebook!",
       followLinkedin: "Síguenos en Linkedin!",
@@ -86,8 +74,8 @@ function Iletisim() {
               <p className="contact-info">
                 <strong>{isSpanish ? "Dirección" : (isGerman ? "Adresse" : (isArabic ? "عنوان" : "Adres"))}</strong>: {isSpanish ? contactInfo.esp.address : (isGerman ? contactInfo.deu.address : (isArabic ? contactInfo.ar.address : contactInfo[selectedLanguage].address))} <br />
                 <strong>{isSpanish ? "Teléfono" : (isGerman ? "Telefon" : (isArabic ? "هاتف" : "Telefon"))}</strong>: {contactInfo[selectedLanguage].phone} <br />
-                <strong>Fax:</strong> {contactInfo[selectedLanguage].fax} <br />
-                <strong>Email:</strong> {contactInfo[selectedLanguage].email}
+                <br />
+           
               </p>
             </Col>
           </Row>

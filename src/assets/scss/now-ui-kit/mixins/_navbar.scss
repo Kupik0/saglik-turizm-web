@@ -7,9 +7,9 @@
         .navbar-nav{
             margin-top: 53px;
             position: relative;
-        	  max-height: calc(100vh - 75px);
-        	  min-height: 100%;
-        	  overflow: auto;
+        	max-height: calc(100vh - 75px);
+        	//   min-height: 100%;
+        	overflow: auto;
 
             &.navbar-logo{
                 top: 0;
@@ -19,6 +19,7 @@
 
         .dropdown.show .dropdown-menu,
         .dropdown .dropdown-menu{
+            height: 400px !important;
             background-color: transparent;
             border: 0;
             transition: none;
@@ -233,6 +234,7 @@
 
     [class*="navbar-expand-"] .navbar-collapse{
         width: 300px;
+        overflow-y: scroll
     }
 
     .wrapper{
